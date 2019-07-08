@@ -301,10 +301,13 @@ describe('orcid', function () {
   describe('api', function () {
     for (let { name, input, output } of apiTests) {
       it(name, async function () {
-        assert.deepStrictEqual(await plugins.input
-          .chainAsync(input, { generateGraph: false })
-          .map(entry => { delete entry.id }),
-        output)
+        const results = await plugins.input.chainAsync(input, { generateGraph: false })
+
+        for (let entry of results) {
+          delete entry.id
+        }
+
+        assert.deepStrictEqual(results, output)
       })
     }
   })
