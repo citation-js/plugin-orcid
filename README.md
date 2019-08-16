@@ -40,6 +40,8 @@ You can also use the [Replacer](https://github.com/citation-js/replacer) API, by
 <script src="bundle.js"></script>
 
 <div class="citation-js" data-input="0000-0000-0000-0000" data-output-format="bibliography" data-output-template="apa">
-  <a href="https://orcid.org/0000-0000-0000-0000">Placeholder markup for if Citation.js does not work</a>
+  Placeholder markup for if Citation.js does not work.
+
+  For example, visit <a href="https://orcid.org/0000-0000-0000-0000">my ORCID profile</a> instead!
 </div>
 ```
