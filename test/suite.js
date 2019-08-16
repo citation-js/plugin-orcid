@@ -11,23 +11,24 @@ const apiTests = [
     input: '0000-0002-4751-4637',
     output: [
       {
+        DOI: '10.7287/peerj.preprints.27466',
         'indexed': {
           'date-parts': [
             [
               2019,
-              2,
-              19
+              7,
+              11
             ]
           ],
-          'date-time': '2019-02-19T01:12:59Z',
-          'timestamp': 1550538779368
+          'date-time': '2019-07-11T20:40:40Z',
+          'timestamp': 1562877640914
         },
         'posted': {
           'date-parts': [
             [
               2019,
-              1,
-              5
+              7,
+              11
             ]
           ]
         },
@@ -36,17 +37,17 @@ const apiTests = [
         'publisher': 'PeerJ',
         'license': [
           {
-            'URL': 'http://creativecommons.org/licenses/by/4.0/',
+            'URL': 'https://creativecommons.org/licenses/by/4.0/',
             'start': {
               'date-parts': [
                 [
                   2019,
-                  1,
-                  5
+                  7,
+                  11
                 ]
               ],
-              'date-time': '2019-01-05T00:00:00Z',
-              'timestamp': 1546646400000
+              'date-time': '2019-07-11T00:00:00Z',
+              'timestamp': 1562803200000
             },
             'delay-in-days': 0,
             'content-version': 'unspecified'
@@ -56,8 +57,7 @@ const apiTests = [
           'domain': [],
           'crossmark-restriction': false
         },
-        'abstract': '<jats:p><jats:bold>Background.</jats:bold> Given the vast number of standards and formats for bibliographical data, any program working with bibliographies and citations has to be able to interpret such data. This paper describes the development of Citation.js (https://citation.js.org/), a tool to parse and format according to those standards. The program follows modern guidelines for software in general and JavaScript in specific, such as version control, source code analysis, integration testing and semantic versioning.</jats:p>\n        <jats:p><jats:bold>Results. </jats:bold> The result is an extensible tool that has already seen adaption in a variety of sources and use cases: as part of a server-side page generator of a publishing platform, as part of a local extensible document generator, and as part of an in-browser converter of extracted references. Use cases range from transforming a list of Wikidata identifiers into a BibTeX file on the command line, to displaying RIS references on a webpage with added Altmetric badges to generating "How to cite this" sections on a blog.</jats:p>\n        <jats:p><jats:bold>Conclusions.</jats:bold> Citation.js is a library supporting various formats of bibliographic information in a broad selection of use cases and environments. Given the support for plugins, more formats can be added with relative ease.</jats:p>',
-        'DOI': '10.7287/peerj.preprints.27466',
+        'abstract': '<jats:p><jats:bold>Background.</jats:bold> Given the vast number of standards and formats for bibliographical data, any program working with bibliographies and citations has to be able to interpret such data. This paper describes the development of Citation.js (https://citation.js.org/), a tool to parse and format according to those standards. The program follows modern guidelines for software in general and JavaScript in specific, such as version control, source code analysis, integration testing and semantic versioning.</jats:p>\n        <jats:p><jats:bold>Results.</jats:bold> The result is an extensible tool that has already seen adaption in a variety of sources and use cases: as part of a server-side page generator of a publishing platform, as part of a local extensible document generator, and as part of an in-browser converter of extracted references. Use cases range from transforming a list of DOIs or Wikidata identifiers into a BibTeX file on the command line, to displaying RIS references on a webpage with added Altmetric badges to generating \"How to cite this\" sections on a blog. The accuracy of conversions is currently 27 % for properties and 60 % for types on average and a typical initialization takes 120 ms in browsers and 1 s with Node.js on the command line.</jats:p>\n        <jats:p><jats:bold>Conclusions.</jats:bold> Citation.js is a library supporting various formats of bibliographic information in a broad selection of use cases and environments. Given the support for plugins, more formats can be added with relative ease.</jats:p>',
         'type': 'manuscript',
         'created': {
           'date-parts': [
@@ -83,7 +83,7 @@ const apiTests = [
             'sequence': 'first',
             'affiliation': [
               {
-                'name': 'Unaffiliated, Eindhoven, The Netherlands'
+                'name': 'Independent researcher, Eindhoven, The Netherlands'
               }
             ]
           }
@@ -121,12 +121,12 @@ const apiTests = [
           'date-parts': [
             [
               2019,
-              1,
-              5
+              7,
+              11
             ]
           ],
-          'date-time': '2019-01-05T15:53:59Z',
-          'timestamp': 1546703639000
+          'date-time': '2019-07-11T19:59:04Z',
+          'timestamp': 1562875144000
         },
         'score': 1,
         'subtitle': [],
@@ -135,8 +135,8 @@ const apiTests = [
           'date-parts': [
             [
               2019,
-              1,
-              5
+              7,
+              11
             ]
           ]
         },
@@ -146,23 +146,23 @@ const apiTests = [
           'references': [
             {
               'id-type': 'doi',
-              'id': '10.7287/peerj.preprints.27466v1/supp-1',
+              'id': '10.7287/peerj.preprints.27466v2/supp-1',
               'asserted-by': 'subject'
             },
             {
               'id-type': 'doi',
-              'id': '10.7287/peerj.preprints.27466v1/supp-2',
+              'id': '10.7287/peerj.preprints.27466v2/supp-2',
               'asserted-by': 'subject'
             },
             {
               'id-type': 'doi',
-              'id': '10.7287/peerj.preprints.27466/supp-1',
-              'asserted-by': 'object'
+              'id': '10.7287/peerj.preprints.27466v2/supp-3',
+              'asserted-by': 'subject'
             },
             {
               'id-type': 'doi',
-              'id': '10.7287/peerj.preprints.27466/supp-2',
-              'asserted-by': 'object'
+              'id': '10.7287/peerj.preprints.27466v2/supp-4',
+              'asserted-by': 'subject'
             }
           ]
         },

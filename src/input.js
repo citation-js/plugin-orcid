@@ -6,7 +6,7 @@ export const formats = {
   // fetch from API
   '@orcid/id': {
     parseAsync (id) {
-      const url = `https://orcid.org/${id}/works`
+      const url = `https://pub.orcid.org/v3.0/${id}/works`
       const headers = {
         accept: 'application/json'
       }
