@@ -170,7 +170,7 @@ const apiTests = [
       },
       {
         'type': 'article',
-        // 'id': 'https://doi.org/10.5281/zenodo.1005176',
+        // 'id': 'https://doi.org/10.5281/ZENODO.1005176',
         'author': [
           {
             'family': 'Willighagen',
@@ -203,14 +203,14 @@ const apiTests = [
           ]
         },
         'abstract': "Added\n\n[meta] More test work\n<code>util.Register</code>: Alias <code>remove</code> to <code>delete</code>\n<code>input/@wikidata</code>: Support 'stated as' (P1932) qualifier, if possible preferring that over fetching author labels (#131)\n<code>output/@csl</code>: Bibliography <code>nosort</code> option\n<code>input/@bibtex</code>: Support for comma-delimited entries (#157)\n\nChanged\n\nDeprecated wrapper CSL locale and template methods\n\nFixed\n\n<code>output/@csl</code>: Affixes now work reliably for all formats (#84)",
-        'DOI': '10.5281/zenodo.1005176',
+        'DOI': '10.5281/ZENODO.1005176',
         'publisher': 'Zenodo',
         'title': 'Larsgw/Citation.Js: V0.4.0-10',
         'URL': 'https://zenodo.org/record/1005176'
       },
       {
         'type': 'dataset',
-        // 'id': 'https://doi.org/10.5281/zenodo.845934',
+        // 'id': 'https://doi.org/10.5281/ZENODO.845934',
         'categories': [
           'conifers',
           'datamining'
@@ -231,14 +231,14 @@ const apiTests = [
           ]
         },
         'abstract': 'A dataset containing info on matches from full text searches by ContentMine tools, that can be mapped to Wikidata. See README.md.',
-        'DOI': '10.5281/zenodo.845934',
+        'DOI': '10.5281/ZENODO.845934',
         'publisher': 'Zenodo',
         'title': 'Species Co-Occurrences From Eupmc Articles Related To Pines',
         'URL': 'https://zenodo.org/record/845934'
       },
       {
         'type': 'graphic',
-        // 'id': 'https://doi.org/10.17863/cam.12533',
+        // 'id': 'https://doi.org/10.17863/CAM.12533',
         'language': 'en',
         'author': [
           {
@@ -288,7 +288,7 @@ const apiTests = [
           ]
         },
         'abstract': 'Poster presentation delivered at Text and Data Mining Symposium held at the University of Cambridge.',
-        'DOI': '10.17863/cam.12533',
+        'DOI': '10.17863/CAM.12533',
         'publisher': 'Apollo - University of Cambridge Repository',
         'title': 'WikiFactMine for Phytochemistry',
         'URL': 'https://www.repository.cam.ac.uk/handle/1810/266236'
