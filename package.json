@@ -7,9 +7,11 @@
     "test": "mocha -r @babel/register -R spec test/suite.js",
     "babel": "babel src -d lib --copy-files",
     "lint": "standard \"src/**/*.js\" \"test/**/*.js\"",
-    "coverage": "nyc npm test",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md",
+    "coverage": "NODE_ENV=coverage nyc npm test",
     "report": "nyc report --reporter=lcov > coverage.lcov",
     "prepublishOnly": "npm run babel",
+    "version": "npm run changelog",
     "preversion": "npm run lint && npm run test"
   },
   "repository": {
@@ -27,7 +29,7 @@
   },
   "homepage": "https://github.com/citation-js/plugin-orcid#readme",
   "engines": {
-    "node": ">=8"
+    "node": ">=10"
   },
   "files": [
     "/lib"
@@ -40,27 +42,28 @@
     "instrument": false
   },
   "standard": {
-    "parser": "babel-eslint"
+    "parser": "@babel/eslint-parser"
   },
   "dependencies": {
-    "@citation-js/date": "^0.4.4",
+    "@citation-js/date": "^0.5.0",
     "@citation-js/name": "^0.4.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.6.4",
     "@babel/core": "^7.6.4",
+    "@babel/eslint-parser": "^7.14.3",
     "@babel/preset-env": "^7.6.3",
     "@babel/register": "^7.6.2",
-    "@citation-js/core": "^0.5.0-alpha.4",
-    "@citation-js/plugin-doi": "^0.5.0-alpha.4",
-    "babel-eslint": "^10.0.3",
-    "babel-plugin-istanbul": "^5.2.0",
-    "mocha": "^6.2.1",
-    "nyc": "^14.1.0",
-    "standard": "^14.3.1"
+    "@citation-js/core": "^0.5.1",
+    "@citation-js/plugin-doi": "^0.5.1",
+    "babel-plugin-istanbul": "^6.0.0",
+    "conventional-changelog": "^3.1.24",
+    "mocha": "^8.4.0",
+    "nyc": "^15.1.0",
+    "standard": "^16.0.3"
   },
   "peerDependencies": {
-    "@citation-js/core": ">=0.5.0-alpha.4 <0.5.0-beta.0",
-    "@citation-js/plugin-doi": ">=0.5.0-alpha.4 <0.5.0-beta.0"
+    "@citation-js/core": "^0.5.1",
+    "@citation-js/plugin-doi": "^0.5.1"
   }
 }
