@@ -1,5 +1,4 @@
 import { util } from '@citation-js/core'
-// import config from './config'
 
 export const ref = '@orcid'
 export const formats = {
