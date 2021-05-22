@@ -33,7 +33,7 @@ export const formats = {
 
   '@orcid/records': {
     parse (records) {
-      return records.group.map(record => record['work-summary'])
+      return records.group.map(record => record['work-summary'][0])
     },
     parseType: {
       dataType: 'SimpleObject',
