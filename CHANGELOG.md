@@ -1,18 +1,13 @@
+## [0.3.1](https://github.com/citation-js/plugin-orcid/compare/v0.3.0...v0.3.1) (2022-05-30)
+
+
+
 # [0.3.0](https://github.com/citation-js/plugin-orcid/compare/v0.2.0...v0.3.0) (2021-05-22)
-
-
-* chore!: update dependencies ([1ee9ea1](https://github.com/citation-js/plugin-orcid/commit/1ee9ea1e2aac1a477885f364566056bd5d1542e6))
-* refactor(orcid)!: remove unused configuration ([003f67f](https://github.com/citation-js/plugin-orcid/commit/1ee9ea1))
 
 
 ### Bug Fixes
 
-* **orcid:** only include the preferred source ([04cceac](https://github.com/citation-js/plugin-orcid/commit/003f67fb4a47c329f77dbc4d390065721e2678e7))
-
-
-### BREAKING CHANGES
-
-* drops Node 8 support
+* **orcid:** only include the preferred source ([04cceac](https://github.com/citation-js/plugin-orcid/commit/04cceac78b927f8ae6e2cf5da1468b63bb3144ae))
 
 
 
@@ -52,3 +47,6 @@
 ### Features
 
 * **orcid:** add support for ORCID IDs ([c75c6be](https://github.com/citation-js/plugin-orcid/commit/c75c6bee570d97d1290c5dddd6d10f32b89b1b1a))
+
+
+

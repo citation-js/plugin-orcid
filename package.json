@@ -1,6 +1,6 @@
 {
   "name": "@citation-js/plugin-orcid",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Citation.js plugin for ORCID",
   "main": "lib/index.js",
   "scripts": {
