@@ -12,9 +12,9 @@ const apiTests = [
     output: [
       {
         indexed: {
-          'date-parts': [[2020, 3, 26]],
-          'date-time': '2020-03-26T21:24:17Z',
-          timestamp: 1585257857574
+          'date-parts': [[2022, 4, 3]],
+          'date-time': '2022-04-03T18:13:52Z',
+          timestamp: 1649009632265
         },
         'reference-count': 67,
         publisher: 'PeerJ',
@@ -51,8 +51,9 @@ const apiTests = [
           timestamp: 1565595415000
         },
         page: 'e214',
+        published: { 'date-parts': [[2019, 8, 12]] },
         source: 'Crossref',
-        'is-referenced-by-count': 0,
+        'is-referenced-by-count': 1,
         title: 'Citation.js: a format-independent, modular bibliography tool for the browser and command line',
         prefix: '10.7717',
         volume: '5',
@@ -134,17 +135,18 @@ const apiTests = [
               id: '10.7287/peerj-cs.214v0.1/reviews/1',
               'asserted-by': 'object'
             }
-          ],
-          cites: []
+          ]
         },
+        resource: { primary: { URL: 'https://peerj.com/articles/cs-214' } },
+        subject: ['General Computer Science'],
         ISSN: ['2376-5992'],
         'article-number': 'e214'
       },
       {
         indexed: {
-          'date-parts': [[2020, 3, 26]],
-          'date-time': '2020-03-26T16:38:29Z',
-          timestamp: 1585240709286
+          'date-parts': [[2022, 3, 29]],
+          'date-time': '2022-03-29T04:21:28Z',
+          timestamp: 1648527688024
         },
         posted: { 'date-parts': [[2019, 7, 11]] },
         'group-title': 'PeerJ Preprints',
@@ -177,6 +179,7 @@ const apiTests = [
         'is-referenced-by-count': 0,
         title: 'Citation.js: a format-independent, modular bibliography tool for the browser and command line',
         prefix: '10.7287',
+        published: { 'date-parts': [[2019, 7, 11]] },
         author: [
           {
             ORCID: 'http://orcid.org/0000-0002-4751-4637',
@@ -289,6 +292,7 @@ const apiTests = [
             }
           ]
         },
+        resource: { primary: { URL: 'https://peerj.com/preprints/27466v2' } },
         subtype: 'preprint'
       },
       {
