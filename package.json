@@ -58,7 +58,7 @@
     "@citation-js/core": "^0.5.1",
     "@citation-js/plugin-doi": "^0.5.1",
     "babel-plugin-istanbul": "^6.0.0",
-    "mocha": "^8.4.0",
+    "mocha": "^10.1.0",
     "nyc": "^15.1.0",
     "standard": "^16.0.3"
   },
