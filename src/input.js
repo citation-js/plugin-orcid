@@ -1,4 +1,4 @@
-import { util } from '@citation-js/core'
+import { plugins, util } from '@citation-js/core'
 
 export const ref = '@orcid'
 export const formats = {
@@ -32,8 +32,18 @@ export const formats = {
   },
 
   '@orcid/records': {
-    parse (records) {
-      return records.group.map(record => record['work-summary'][0])
+    parseAsync: async (records) => {
+      const results = []
+
+      for (const record of records.group) {
+        const doi = plugins.input.data(record['work-summary'][0], '@orcid/record')
+
+        if (doi) {
+          results.push(await plugins.input.chainAsync(doi, { forceType: '@doi/id' }))
+        }
+      }
+
+      return results
     },
     parseType: {
       dataType: 'SimpleObject',
