@@ -1,14 +1,27 @@
+# @citation-js/plugin-orcid
+
+This plugin adds support for exporting references from an [ORCID](https://orcid.org/) record.
+
+[![NPM version](https://img.shields.io/npm/v/@citation-js/plugin-orcid.svg)](https://npmjs.org/package/@citation-js/plugin-orcid)
+[![Codecov](https://img.shields.io/codecov/c/gh/citation-js/plugin-orcid)](https://app.codecov.io/gh/citation-js/plugin-orcid)
+[![NPM total downloads](https://img.shields.io/npm/dt/@citation-js/plugin-orcid.svg)](https://npmcharts.com/compare/@citation-js%2Fplugin-orcid?minimal=true)
+![License](https://img.shields.io/npm/l/@citation-js/plugin-orcid.svg)
+
 ## Install
 
 ```js
-npm install @citation-js/plugin-orcid
+npm install @citation-js/plugin-orcid @citation-js/plugin-doi
 ```
 
 Note: this plugin requires `@citation-js/plugin-doi`, so be sure to install that one as well if you have not already. It is automatically included in the `citation-js` package.
 
 ## Use
 
-Install the plugin by `require`-ing it:
+```js
+import '@citation-js/plugin-orcid'
+```
+
+Or install the plugin by `require`-ing it:
 
 ```js
 require('@citation-js/plugin-orcid')
