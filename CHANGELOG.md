@@ -1,3 +1,15 @@
+# [0.4.0](https://github.com/citation-js/plugin-orcid/compare/v0.3.1...v0.4.0) (2026-10-05)
+
+* chore!: update to Node.js v22 ([7fd69c5](https://github.com/citation-js/plugin-orcid/commit/7fd69c5df13200a1388de42222b54427b5c92ef1))
+
+### Bug Fixes
+
+* avoid potentially hundreds of concurrent DOI requests ([a561406](https://github.com/citation-js/plugin-orcid/commit/a5614068a6386ad27d3f7ddc489c878105acd5bd))
+
+### BREAKING CHANGES
+
+* drop support for Node.js 10, 12, 14, 16, 18, 20
+
 ## [0.3.1](https://github.com/citation-js/plugin-orcid/compare/v0.3.0...v0.3.1) (2022-05-30)
 
 
